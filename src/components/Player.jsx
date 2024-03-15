@@ -4,10 +4,9 @@ export default function Player() {
   const refPlayerName = useRef();
   const [playerName, setPlayerName] = useState(null);
 
-
   const handleclick = () => {
     setPlayerName(refPlayerName.current.value);
-    refPlayerName.current.value = '';
+    refPlayerName.current.value = "";
   };
   return (
     <section id="player">
